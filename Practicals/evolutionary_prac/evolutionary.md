@@ -74,7 +74,7 @@ seqmagick convert --output-format nexus --alphabet dna bovidae_50_mtDNA-named.fa
 
 Look at the NEXUS alignment file. At the beginning of the alignment and near the end there are regions that have large gaps and very poor conservation.
 
-**Q2. What is the reason for this? (*Hint: use the accession numbers in the name to search [Entrez](https://www.ncbi.nlm.nih.gov/genome/) for the annotation.*)**
+**Q2. What is the reason for this? (*Hint: use the accession numbers in the name to search [Entrez](https://www.ncbi.nlm.nih.gov/nuccore) for the annotation.*)**
 
 The phylogenetic reconstruction methods we will be using cannot handle missing bases, so these must be removed. 
 We can use Gblocks to remove the non-conserved regions of the alignment.
